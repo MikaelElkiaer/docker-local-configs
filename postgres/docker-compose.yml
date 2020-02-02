@@ -12,6 +12,8 @@ services:
     container_name: pgadmin
     network_mode: host
     environment:
+    - "PGADMIN_DEFAULT_EMAIL=postgres@mail.com"
+    - "PGADMIN_DEFAULT_PASSWORD=postgres"
     - "PGADMIN_LISTEN_PORT=81"
     ports:
     - "81:80"
